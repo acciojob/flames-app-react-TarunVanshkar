@@ -62,9 +62,9 @@ const App = () => {
         <div id="main">
             {/* Do not remove the main div */}
             <input type="text" placeholder="Enter first name" value={firstname} 
-                onChange={(e) => setFirstname(e.target.value.toLowerCase())} data-testid="input1" />
+                onChange={(e) => setFirstname(e.target.value.toLowerCase())} data-testid="input1" name="name1"/>
             <input type="text" placeholder="Enter second name" value={secondname} 
-                onChange={(e) => setSecondname(e.target.value.toLowerCase())} data-testid="input2" />
+                onChange={(e) => setSecondname(e.target.value.toLowerCase())} data-testid="input2" name="name2" />
             <button onClick={calculateRelationship} data-testid="calculate_relationship" >Calculate Relationship Future</button>
             <button onClick={clearStatus} data-testid="clear" >Clear</button>
 
